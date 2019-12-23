@@ -1,22 +1,20 @@
 {
 	"manifest_version": 2,
 	"author": "LuckOfWise",
-	"name": "Github full container",
-	"description": "githubのページのcontainerのwidthを広くするためのChromeエクステンション",
+	"name": ".world Demo Manager",
+	"description": "ソニックガーデンの.worldのデモ用のツールです",
 	"version": "1.0",
 	"icons": {
 		"48": "icon.png"
 	},
 	"content_scripts": [{
-		"matches": ["https://github.com/*"],
-		"js": ["script.js"]
+		"matches": ["https://www.sonicgarden.world//*"],
+		"js": ["jquery-3.4.1.min.js", "script.js"]
 	}],
-	"background": {
-		"scripts": ["background.js"]
-	},
 	"browser_action": {
 		"default_icon": "icon.png",
-		"default_title": ""
+		"default_title": "",
+		"default_popup": "popup.html"
 	},
 	"permissions": [
 		"tabs",
