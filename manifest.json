@@ -5,7 +5,8 @@
 	"description": "ソニックガーデンの.worldのデモ用のツールです",
 	"version": "1.0",
 	"icons": {
-		"48": "icon.png"
+		"48": "icon.png",
+		"128": "sg_icon_128.png"
 	},
 	"content_scripts": [{
 		"matches": ["https://www.sonicgarden.world//*"],
@@ -17,9 +18,6 @@
 		"default_popup": "popup.html"
 	},
 	"permissions": [
-		"tabs",
-		"background",
-		"http://*/*",
-		"https://*/*"
+		"background"
 	]
 }
